@@ -313,6 +313,7 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
 /* ======SERVICES======= */
 #services {
   position: relative;
@@ -485,6 +486,8 @@ article .icon {
 
 .courses_container {
   display: grid;
+  justify-content: center;
+  flex-direction: column;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 0 2rem;
@@ -542,6 +545,175 @@ article .icon {
 .course_info .btn:hover {
   background-color: #555;
 }
+
+/* activities SECTION */
+/* activities SECTION */
+#activities {
+  position: relative;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  height: auto; /* Adjust height to fit content if necessary */
+}
+
+#activities h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.activities_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activities_container .activities {
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  width: 100%; /* Ensures cards take full available width */
+}
+
+.activities_container .activities:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.activities_container .activities h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.activities_container .activities li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+
+.activities_container .activities a.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.activities_container .activities a.btn:hover {
+  background-color: #555;
+}
+
+.activities_container .activities::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.05);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+.activities_container .activities:hover::after {
+  transform: rotate(5deg);
+}
+.activities_info {
+  padding: 1.5rem;
+}
+
+.activities_info h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.activities_info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.activities_info .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.activities_info .btn:hover {
+  background-color: #555;
+}
+
+
+/*certifications*/
+.certifications-section, .popular-courses-section {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.certifications-section h2, .popular-courses-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.certification-list, .course-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.certification-list li, .course-list li {
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.certification-list a, .course-list a {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.certification-list a:hover, .course-list a:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.certification-list a:active, .course-list a:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
 
 /* CONTACT */
 
